@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+
+  <link rel="stylesheet" type="text/css" href="styles.css" >
+  <title>Expenses chart component</title>
+
+
+</head>
+<body>
+  <main class="main">
+
+    <section class="balance_wrap">      
+      <div class="balance-heading">
+        <span class="my-balance">My balance<br></span>
+        <span class="amount">$2936.20</span>
+      </div>
+      <div class="circle_wrap">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+      </div>
+      
+    </section>
+    <div class="spacing"></div>
+    <section class="balance-sheet">
+      <p class="duration"> Spending - Last 7 days</p>
+      <div class="graph">
+        <div class="bar mon" title="">
+
+          <label class="day" for="mon">mon</label>
+        </div>
+        <div class="bar tue" title="">
+          
+          <label  class="day" for="mon">tue</label>
+        </div>
+        <div class="bar wed" title="">
+
+          <label class="day" for="mon">wed</label>
+        </div>
+
+        <div class="bar thu" title="">
+
+          <label class="day" for="mon">thu</label>
+        </div>
+        <div class="bar fri" title="">
+
+          <label  class="day" for="mon">fri</label>
+        </div>
+        <div class="bar sat" title="">
+
+          <label class="day" for="mon">sat</label>
+        </div>
+        <div class="bar sun" title="">
+
+          <label class="day" for="mon">sun</label>
+        </div>
+        
+      </div>
+      
+      <p class="total-heading"><hr class="line"></p>
+      <div class="total_wrap">
+        <div class="balance-heading light">
+          <span class="total-subtitle">Total this month</span>
+          <p id="total" class="big-text"></p>
+        </div>
+        <div class="percentage-wrap">
+          <p class="percentage-text" id="perc_change"></p>
+          <p class="small-text">from last month</p>
+        </div>
+      </div>
+      
+    </section>
+    
+      
+    
+  </main>
+
+  
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Bolatito</a>.
+  </div> --> -->
+  <script src="script.js" ></script>
+</body>
+</html>

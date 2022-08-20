@@ -1,0 +1,276 @@
+body {
+    background-color: hsl(27, 66%, 92%);
+    font-size: 18px;
+    font-family: 'montserrat', Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    height: 100vh;
+    
+}
+
+
+.balance_wrap {
+    
+    background-color: hsl(10, 79%, 65%);
+    height: 6em;
+    width: 40%;
+    display: inline-flex;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+    align-items: center;
+    color: hsl(33, 100%, 98%);
+    border-radius: 20px;
+    /* margin-left: 28%;
+    margin-top: 2%; */
+}
+.balance-heading {
+    text-align: justify;
+}
+.balance_wrap .title {
+    font-weight: 400;
+    font-size: 50%;
+}
+
+.balance_wrap .amount {
+    font-size: 160%;
+    font-weight: 700;
+}
+.balance_wrap .circle_wrap {
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+.balance_wrap .circle1 {
+    width: 93%;
+    height: 91%;
+    border: 0.12em white solid;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    right: 28%
+}
+.balance_wrap .circle2 {
+    width: 100%;
+    height: 100%;
+    background-color: hsl(25, 47%, 15%);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.balance-sheet {
+    background-color: hsl(33, 100%, 98%);
+    height: 31em;
+    width: 40%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 20px;
+    /* margin-left: 28%; */
+}
+
+.balance-sheet .duration {
+    text-align: justify;
+    color:hsl(25, 47%, 15%);
+    font-size: 1.4em;
+    font-weight: 700;
+    margin: 4% 0 4% 0;
+}
+.graph {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60%;
+}
+
+.bar {
+    align-self: flex-end;
+    font-size: 0.9em;
+    height: 0%;
+    width: 12%;
+    background-color: hsl(10, 79%, 65%);
+    position: relative;
+    text-align: justify;
+    color: #aaa;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.day {
+    position: absolute;
+    bottom: -2rem;
+    left: 0.75rem;
+}
+
+/* .total {
+    padding-top: 1.8em;
+} */
+.big-text {
+    font-weight: 600;
+    font-size: 1.7em;
+    margin: 0;
+    color: hsl(25, 47%, 15%);
+}
+
+.total_wrap {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.total-heading {
+    padding-top: 1.8em;
+    color: #aaa;
+    font-size: 0.9rem;
+    text-align: left;
+}
+.small-text {
+    color: #aaa;
+    font-size: 0.9rem;
+    margin: 0;
+}
+.percentage-text {
+    margin: 0;
+    font-weight: 700;
+    font-size: 0.9em;
+    color: hsl(25, 47%, 15%);
+}
+.percentage-wrap {
+    text-align: right;
+    
+}
+.light{
+    color: #aaa;
+    font-size: 0.9em;
+}
+.main {
+    
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.spacing {
+    padding-top: 20px;
+}
+/* for mobile devices */
+@media (max-width:920px) {
+    .day {
+        left: 0.1rem;
+    }
+}
+@media (max-width: 750px) {
+    .balance_wrap {
+        width: 90%;
+    }
+    .balance-sheet {
+        width: 90%;
+    }
+    .light {
+        font-size: 1.2em;
+    }
+    .day {
+        left: 0.5rem
+    }
+    .total-subtitle {
+        font-size: 0.9em;
+    }
+    .total-heading {
+        margin-bottom: 0;
+        margin-top: 6px;
+    }
+    .percentage-text {
+        font-size: 1.3em;
+    }
+    .small-text {
+        font-size: 0.9em;
+    }
+
+}
+@media (max-width: 520px) {
+    .light {
+        font-size: 1.0em;
+    }
+    .total-subtitle {
+        font-size: 0.7em;
+    }
+    .percentage-text {
+        font-size: 1.1em;
+    }
+    .small-text {
+        font-size: 0.7em;
+    }
+    .balance-sheet {
+        height: 30em;
+    }
+}
+@media (max-width: 480px) {
+    .balance-sheet {
+        height: 30em;
+    }
+    .day {
+        left: 0.3rem;
+    }
+}
+@media (max-width: 340px) {
+    .day {
+        font-size: 0.6em;
+        color: black;
+        font-weight: 600;
+    }
+    .light {
+        font-size: 0.9em;
+    }
+    .balance-sheet .duration {
+        font-size: 1.0em;
+    }
+    .balance-sheet {
+        height: 27em;
+    }
+    
+}
+@media (max-width: 260px) {
+    .light {
+        font-size: 0.7em;
+    }
+    
+    .percentage-text {
+        font-size: 0.9em;
+    }
+    .small-text {
+        font-size: 0.5em;
+    }
+    .balance-heading {
+        font-size: 0.7em;
+    }
+    .balance_wrap {
+        height: 4em;
+    }
+    .spacing {
+        padding-top: 10px;
+    }
+}
+@media (max-width: 204px) {
+    .day {
+        font-size: 0.45em;
+    }
+    .balance-heading {
+        font-size: 0.5em;
+    }
+    .percentage-text {
+        font-size: 0.6em;
+    }
+    .small-text {
+        font-size: 0.3em;
+    }
+    .balance-sheet {
+        height: 22em;
+    }
+    .balance-sheet .duration {
+        font-size: 0.7em;
+        margin: 8% 0 8% 0;
+    }
+}
